@@ -1,9 +1,14 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAME HERE"
+title: "HL7 FHIR: Sebuah Pengangantar"
+author: "World Bank Group"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
 
-# Down the rabbit-hole
+# Kata Pengantar
 
+```{r echo=FALSE}
+knitr::include_graphics(rep('images/fhir-logo-www.png'))
+```
+
+Buku ini disusun untuk memudahkan pengelola fasilitas kesehatan (provider) dan pengembang Health Information and Management Systems (HIMS) untuk mengadopsi HL7 FHIR yang menjadi standar pertukaran data kesehatan di lingkungan kesehatan di Indonesia.
