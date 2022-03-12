@@ -2,7 +2,7 @@ bookdown::gitbook:
   css: style.css
   config:
     toc:
-      collapse: none
+      collapse: subsection
       scroll_highlight: true
       before: |
         <li><a href="./">STANDARISASI INTEROPERABILITAS EKOSISTEM KESEHATAN DIGITAL INDONESIA</a></li>
