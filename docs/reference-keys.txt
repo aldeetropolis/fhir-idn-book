@@ -1,5 +1,10 @@
 kata-pengantar
 pendahuluan
+fragmentasi-data-dan-sistem-informasi-kesehatan
+kebutuhan-standarisasi-pertukaran-data-dan-informasi-kesehatan
+standar-interoperabilitas-kesehatan
+hl7-fhir
 mengapa-menggunakan-hl7-fhir
-the-pool-of-tears
-a-caucus-race-and-a-long-tale
+contoh-aplikasi-penggunaan-hl7-fhir
+filosofi-dibalik-hl7-fhir
+peta-jalan-interoperabilitas-kesehatan
