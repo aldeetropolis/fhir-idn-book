@@ -5,8 +5,8 @@ bookdown::gitbook:
       collapse: none
       scroll_highlight: true
       before: |
-        <li><a href="./">HL7 FHIR: Sebuah Pengantar</a></li>
+        <li><a href="./">STANDARISASI INTEROPERABILITAS EKOSISTEM KESEHATAN DIGITAL INDONESIA</a></li>
       after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+        <li><a href="https://dto.kemkes.go.id" target="blank">DTO Kemenkes</a></li>
     search:
       engine: lunr

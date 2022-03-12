@@ -1,6 +1,7 @@
 # Standar Interoperabilitas Kesehatan
 
 Bab ini akan menjelaskan berbagai macam standar yang telah diimplementasikan di Indonesia, terutama oleh Kemenkes. Beberapa standar yang telah digunakan antara lain :
+
 1.	HL7 FHIR
 2.	SNOMED-CT
 3.	LOINC
@@ -9,6 +10,7 @@ Bab ini akan menjelaskan berbagai macam standar yang telah diimplementasikan di 
 Standar HL7 FHIR (singkatan dari Fast Healthcare Interoperable Resources, diucapkan seperti “fire”) merupakan salah satu standar interoperabilitas sistem informasi kesehatan yang dikembangkan oleh organisasi oleh HL7. Standar ini mendukung pertukaran data antar aplikasi dalam konteks pelayanan kesehatan. HL7 FHIR merupakan pengembangan versi keempat menggabungkan keunggulan-keunggulan dari standar yang telah dikembangkan sebelumnya (HL7 v2, v3, dan CDA) dan berfokus kepada kemudahan implementasi yang ketat.
 
 Singkatnya, FHIR memiliki keunggulan dalam :
+
 * Lebih mudah dan lebih murah daripada standar lain yang sebanding:
   + Lebih cepat untuk dipelajari, diterapkan, dan dipecahkan (Anda seharusnya dapat "mencari tahu" lebih dari akhir pekan dan standar dikirimkan dengan toolkit dan contoh).
   + Memiliki komunitas yang dinamis dan open source dan sering mengadakan connectathon.
@@ -27,6 +29,7 @@ Singkatnya, FHIR memiliki keunggulan dalam :
 
 ## Mengapa Menggunakan HL7 FHIR?
 FHIR menawarkan banyak peningkatan dari standar yang telah dikembangkan sebelumnya oleh HL7 :
+
 * Fokus kepada implementasi : cepat dan mudah diterapkan (beberapa pengembang dapat membuat antarmuka sederhana dalam satu hari)
 * Beberapa perpustakaan implementasi, banyak contoh tersedia untuk memulai pengembangan
 * Spesifikasi gratis untuk digunakan tanpa batasan
@@ -40,6 +43,7 @@ FHIR menawarkan banyak peningkatan dari standar yang telah dikembangkan sebelumn
 
 ## Contoh Aplikasi Penggunaan HL7 FHIR
 FHIR dapat digunakan untuk berbagai aplikasi seperti :
+
 * Pertukaran data antar sistem dalam satu institusi (antara EMR, PACS, LIS, dll)
 * Di tingkat regional, misal dalam Sistem Informasi Kesehatan Daerah di tingkat provinsi maupun beberapa provinsi yang berdekatan.
 * Di tingkat nasional, misal di Sistem Informasi Kesehatan Nasional
@@ -49,6 +53,7 @@ FHIR dapat digunakan untuk berbagai aplikasi seperti :
 FHIR tidak menyelesaikan tantangan interoperabilitas yang sangat sulit – seperti alur kerja dan kebijakan perbedaan antara organisasi, dan variabilitas dalam data yang ditangkap dan ditemukan di lokasi yang berbeda konteks penggunaan. FHIR bertujuan untuk membuat pelaksanaan pertukaran data sesederhana mungkin, untuk membuka jalan bagi pemecahan masalah interoperabilitas yang sulit ini.
 
 Filosofi desain FHIR dapat diringkas sebagai berikut:
+
 * Fokus pada Implementer – mudah dipahami oleh pengembang, banyak tools yang tersedia, API, dan contoh use case yang bekerja.
 * Menargetkan dukungan untuk skenario umum dengan menyediakan resources yang banyak digunakan – namun pengguna dapat menambahkan resources yang belum ada dengan konsep ekstensi.
 * Memanfaatkan teknologi web lintas industri - gunakan teknologi lintas industri yang sama seperti Google, Facebook dan lainnya (mis. XML, JSON, HTTPS, OAuth).

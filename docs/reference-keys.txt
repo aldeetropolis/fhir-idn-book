@@ -8,3 +8,4 @@ mengapa-menggunakan-hl7-fhir
 contoh-aplikasi-penggunaan-hl7-fhir
 filosofi-dibalik-hl7-fhir
 peta-jalan-interoperabilitas-kesehatan
+pengembangan-electronic-health-record-ehr-nasional
