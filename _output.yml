@@ -5,7 +5,7 @@ bookdown::gitbook:
       collapse: subsection
       scroll_highlight: true
       before: |
-        <li><a href="./">STANDARISASI INTEROPERABILITAS EKOSISTEM KESEHATAN DIGITAL INDONESIA</a></li>
+        <li><a href="./">Indonesia Health Services</a></li>
       after: |
         <li><a href="https://dto.kemkes.go.id" target="blank">DTO Kemenkes</a></li>
     search:

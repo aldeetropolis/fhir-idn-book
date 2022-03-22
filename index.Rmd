@@ -1,8 +1,9 @@
 --- 
-title: "STANDARISASI INTEROPERABILITAS EKOSISTEM KESEHATAN DIGITAL INDONESIA"
+title: "Kerangka Standarisasi Teknologi dan Data pada Ekosistem Indonesia Health Services"
 author: "World Bank Group"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
+knit: "bookdown::render_book"
 ---
 
 # Kata Pengantar {-}
