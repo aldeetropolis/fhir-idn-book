@@ -8,6 +8,10 @@ standar-teknologi-dan-data-ihs
 penggunaan-ihs-number-sebagai-nomor-identifikasi-yang-harus-digunakan-di-dalam-seluruh-sistem-di-dalam-ihs.
 otentikasi-akses-ihs-melalui-mekanisme-yang-telah-ditentukan
 informasi-pasien-yang-terekam-di-dalam-rekam-medis-harus-mengikuti-standar-informasi-klinis-yang-telah-ditentukan-oleh-kemenkes
+standar-penamaan-diagnosis-icd-10-ver.-2010
+standar-penamaan-prosedur-tindakan-medis-icd-9-cm
+standar-terminologi-medis-di-dalam-rekam-medis-elektronik-snomed-ct
+standar-penamaan-uji-laboratorium-loinc
 pertukaran-data-antar-sistem-informasi-menggunakan-api-berbasis-hl7-fhir
 peta-jalan-interoperabilitas-kesehatan
 pengembangan-electronic-health-record-ehr-nasional
