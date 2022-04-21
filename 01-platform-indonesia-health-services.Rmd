@@ -1,0 +1,74 @@
+# Platform Indonesia Health Services
+
+Untuk memenuhi kebutuhan tersebut, Kementerian Kesehatan mengadopsi model infrastruktur Platform-as-a-service (PAAS) yang menghubungkan seluruh ekosistem pelaku industri kesehatan untuk menciptakan satu data kesehatan nasional yang dapat diandalkan. Selanjutnya platform ini disebut dengan Indonesia Health Services (IHS). Pendekatan platform ini akan menjadi penghubung antar platform aplikasi yang beragam pada berbagai pelaku industri kesehatan, tidak untuk menggantikan fungsi aplikasi yang telah ada saat ini, juga tidak untuk menyatukan semua fungsi aplikasi menjadi satu aplikasi tunggal.
+
+IHS menyediakan spesifikasi dan mekanisme terstandar atas: proses bisnis, data, teknis dan keamanan. Aplikasi dari pelaku industri kesehatan (disebut Partners System) yang tergabung di dalam IHS harus menyelenggarakan layanan dengan memenuhi spesifikasi proses bisnis, memenuhi spesifikasi dan mekanisme pertukaran data (berbasis HL7 FHIR dan HTTPS REST API), serta memenuhi spesifikasi keamanan (otentikasi, otentifikasi, dan enkripsi). Dampaknya, implementasi pendekatan platform ini akan mewujudkan kolaborasi data kesehatan nasional bersama seluruh pelaku industri kesehatan, tanpa ada ketergantungan pada platform pemrograman tertentu.
+
+## Prinsip Standarisasi
+
+1.	Platform Berbasis Layanan dan Proses Bisnis
+2.	Standardisasi Arsitektur dan Spesifikasi
+3.	Kolaborasi Ekosistem Pelaku Industri Kesehatan
+4.	Open API Berbasis Microservices
+5.	Kepatuhan melalui Keterpaduan
+6.	Manfaat Imbal Balik melalui Kemudahan Layanan dan Informasi Terintegrasi
+
+## Standar Teknologi dan Data IHS
+
+Bagian ini memberikan poin-poin gambaran tentang standar yang digunakan di dalam platform IHS yang perlu diikuti oleh seluruh Partners System dan siapapun yang akan berpartisipasi di dalam IHS :
+
+### Penggunaan IHS Number sebagai nomor identifikasi yang harus digunakan di dalam seluruh sistem di dalam IHS.
+
+IHS Number merupakan ID digital yang dapat digunakan oleh seluruh masyarakat yang akan mengakses layanan kesehatan di dalam ekosistem IHS. ID ini memungkinkan data kesehatan pasien akan tersimpan dengan aman dan akurat di dalam sistem dan dapat diakses di layanan kesehatan manapun yang telah bergabung di dalam ekosistem IHS.
+
+Masyarakat secara otomatis akan mendapatkan IHS Number saat pertama kali mengakses layanan kesehatan. Tidak peduli apakah Anda memiliki NIK/Nomor BPJS atau tidak, semau masyarakat dapat mengakses layanan kesehatan dan datanya tersimpan dengan baik di dalam platform IHS.
+
+### Otentikasi akses IHS melalui mekanisme yang telah ditentukan
+
+Untuk memastikan keamanan data yang disimpan di dalam platform IHS, siapapun yang entitas yang dimaksud di dalam Partners System 
+
+### Informasi pasien yang terekam di dalam rekam medis harus mengikuti standar informasi klinis yang telah ditentukan oleh Kemenkes
+
+Rekam medis elektronik yang ada di masing-masing fasilitas pelayanan kesehatan merekam segala macam informasi klinis pasien saat pasien mengakses fasilitas tersebut. Mulai dari identitas (nama, tempat tanggal lahir, alamat, dll), catatan klinis, diagnosis, tindakan medis, dan juga medikasi yang diberikan kepada pasien. Terminologi kesehatan yang digunakan sebagai alat komunikasi intra maupun antar fasilitas kesehatan juga perlu dilakukan standardisasi. Standarisasi terminologi kesehatan menjadi penting untuk menyeragamkan istilah-istilah medis, tingkatan fasyankes, nama unit di dalam fasyankes, hingga dokumen-dokumen formal yang berhubungan dengan kesehatan. Saat ini IHS telah mengadopsi standar terminologi dari SNOMED-CT dan LOINC sebagai terminologi yang digunakan untuk menyeragamkan istilah medis dari berbagai sistem.
+
+#### Standar Penamaan Diagnosis (ICD-10 ver. 2010)
+
+Di dalam ekosistem IHS, standar penamaan diagnosis menggunakan kode ICD-10 yang dapat digunakan untuk pengajuan klaim Jaminan Kesehatan Nasional dan juga melakukan analisis statistik kesehatan berbasis diagnosis di fasilitas layanan kesehatan. Standar ini dikelola oleh World Health Organization (WHO). Saat ini ada 5 versi ICD-10 dan yang digunakan di dalam ekosistem IHS adalah ICD-10 versi 2010 yang juga digunakan oleh BPJS Kesehatan untuk pengajuan klaim asuransi oleh fasilitas layanan kesehatan. Penggunaan standar ICD-10 ini juga bermanfaat bagi Kementerian Kesehatan dalam melakukan analisis morbiditas dan mortalitas untuk menghasilkan produk laporan epidemiologi penyakit nasional.
+
+#### Standar Penamaan Prosedur & Tindakan Medis (ICD-9-CM)
+
+Sama halnya dengan diagnosis, tindakan dan prosedur yang diterima oleh pasien juga perlu dilakukan standarisasi penamaan dan juga kodefikasi. Dalam hal ini, standar yang berlaku di dalam ekosistem IHS adalah ICD-9-CM yang dikembangkan oleh WHO. Kodefikasi ini berguna dalam hal analisis pembiayaan kesehatan serta prognosis (luaran) dari prosedur atau tindakan yang diterima oleh pasien.
+
+#### Standar Terminologi Medis di dalam Rekam Medis Elektronik (SNOMED-CT)
+
+Tenaga medis di Indonesia melakukan pencatatan rekam medis pasien saat pemeriksaan mengikuti kerangka SOAP (Subjective, Objective, Assessment, dan Plan). Pengisian rekam medis ini didasarkan kepada pengetahuan dan pengalaman tenaga medis, dan kadang juga dipengaruhi oleh daerah tempat tenaga medis bertugas yang menyebabkan keragaman bahasa di dalam rekam medis. Untuk itu standarisasi terminologi medis yang digunakan saat mengisi rekam medis menjadi penting. Standarisasi ini berguna untuk mempermudah transfer pengetahuan antar tenaga medis saat melakukan rujukan pasien atau saat pasien mengakses layanan kesehatan dan menemui tenaga medis yang berbeda. SNOMED-CT (singkatan dari ‘Systematized Nomenclature of Medicine – Clinical Terms’) merupakan standar terminologi medis internasional yang telah digunakan di 35 negara dan terbukti membantu alur layanan kesehatan yang berkelanjutan. Lebih lanjut mengenai SNOMED-CT dapat diakses di link berikut.
+
+#### Standar Penamaan Uji Laboratorium LOINC
+
+Logical Observation Identifiers Name and Codes (LOINC) adalah standar global untuk mengidentifikasi tes laboratorium dan observasi klinis yang dapat memudahkan transmisi informasi antar rumah sakit, baik secara lokal maupun global. Standarisasi ini memungkinkan integrasi data dari berbagai database dan menggunakan LOINC sebagai bahasa umum (set pengidentifikasi, nama, dan kode) untuk mengidentifikasi hasil pemeriksaaan kesehatan, observasi, dan dokumennya. Dikarenakan setiap negara dan rumah sakit mengembangkan kode lokal sendiri untuk menyimpan data hasil uji laboratorium sehingga berpotensi terjadi kesulitan untuk pada saat perencanaan uji laboratorium termasuk saat pelaporan, interpretasi, membandingkan, dan pembagian hasilnya dengan pihak lain. Kurangnya terminologi yang terstandar dan diakui secara luas namun spesifik menjadi alasan di balik pembuatan kode LOINC agar mengurangi pemetaan yang kompleks sehingga memudahkan interoperabilitas lintas sistem RME dan sistem informasi laboratorium pada saat berbagi data.
+
+**Sejarah**
+
+LOINC merupakan hasil karya Institut Regenstrief pada tahun 1994, banyak sistem elektronik mengirimkan informasi klinis secara terpisah menggunakan pengiriman pesan. Akan tetapi dalam pesan tersebut, laboratorium dan institusi klinis menggunakan nama dan kode unik secara lokal (sesuai standar institusi masing-masing) untuk mengidentifikasi setiap tes yang dilakukan. Hal ini menimbulkan masalah dalam integrasi dan agregasi data karena besarnya sumber daya yang diperlukan untuk memetakan kode di setiap sistem yang digunakan. Untuk mengatasi masalah ini, Regenstrief membentuk Komite LOINC dalam membuat nomenklatur untuk observasi laboratorium dan klinis yang terstruktur dan standar .
+
+**Tujuan**
+
+Tujuan LOINC adalah untuk memfasilitasi integrasi data secara elektronik dan pengumpulan data klinis (seperti tes laboratorium, observasi klinis, manajemen luaran, dan penelitian) secara mudah. LOINC mengembangkan kode unik untuk setiap tes, pengukuran, atau observasi yang memiliki makna berbeda secara klinis. Kode LOINC akan membedakan setiap hasil observasi dari enam dimensi yang diamati dengan menyediakan pengidentifikasi universal yang memudahkan pertukaran data klinis antara sistem yang heterogen.
+
+**Cara Kerja**
+
+Terminologi LOINC merupakan gabungan dari kode LOINC dan Fully Specified Name (FSN). Kode LOINC adalah kode unik, identifikasi secara permanen kecuali untuk karakter terakhir, yang merupakan digit cek 10 mod.  Kode LOINC tidak memiliki struktur bawaan. Bidang lain dalam database LOINC berisi semua struktur yang terkait dengan item LOINC tertentu.
+
+FSN terdiri dari lima atau enam bagian utama yakni (1) komponen (analit), merupakan substansi atau entitas yang diukur atau diamati; (2) properti sebagai karakteristik atau atribut analit; (3) waktu menggunakan interval waktu ketika observasi/uji dilakukan; (4) sistem (spesimen) yang menjadi dasar pengamatan; (5) skala yang digunakan menentukan nilai observasi: kuantitatif, ordinal, nominal; (6) metode (opsional) untuk mengklasifikasi bagaimana observasi dilakukan secara lebih dalam sehingga metode hanya diperlukan ketika teknik mempengaruhi hasil interpretasi klinis
+ 
+**Ruang Lingkup LOINC**
+
+LOINC dibagi menjadi dua bagian yakni LOINC laboratorium dan LOINC klinis. LOINC Klinis mencakup segala sesuatu dari pasien yang dapat diperiksa, diukur, atau dilihat tanpa memindahkan bagian anatomis/spesimen apapun. Tanda-tanda vital, hemodinamik, intake/output, EKG, USG obstetrik, echo jantung, pencitraan urologis, prosedur gastroendoskopi, manajemen ventilator paru, studi radiologi, dokumen klinis, instrumen survei terpilih (misalnya: Glasgow Coma Scale, skala depresi PHQ-9, CMS - instrumen penilaian pasien), dan pengamatan klinis lainnya semua dikodekan dalam LOINC dan dapat menjelaskan berbagai jenis laporan dan dokumen klinis.
+
+LOINC laboratorium mencakup semua uji yang dilaporkan oleh laboratorium, termasuk bidang kimia, pemantauan obat terapeutik dan toksikologi, hematologi, serologi, bank darah, mikrobiologi, sitologi, patologi bedah, fertilitas, dan beberapa terminologi dalam kedokteran hewan. Selain itu, ruang lingkup LOINC juga mencakup pengukuran non-tes yang biasanya diperlukan untuk menginterpretasikan hasil dan biasanya disertakan sebagai bagian dari laporan hasil uji laboratorium, contohnya: pap smear serviks dengan fase siklus menstruasi atau kadar estrogen darah; untuk gas darah arteri mencakup oksigen inspirasi; untuk bank darah meliputi jumlah unit yang diberikan.
+
+### Pertukaran data antar sistem informasi menggunakan API berbasis HL7 FHIR
+
+Saat ini, Health Level Seven International - Fast Healthcare Interoperability Resources (HL7-FHIR) adalah standar terkini dalam pertukaran dan interoperabilitas data kesehatan. HL7-FHIR menggunakan fitur Application Programming Interface (API) yang sudah banyak dikenal oleh pengembang sistem informasi untuk bertukar data lintas platform dan teknologi yang berbeda. Pertukaran Informasi Kesehatan, Sistem Informasi Rumah Sakit, dan bahkan perusahaan teknologi besar, seperti Google dan Apple, menggunakan HL7-FHIR dalam menangani data kesehatan. Google Healthcare menyediakan API yang dapat diakses oleh rekam medis elektronik (RME) untuk berbagi data dengan aplikasi lainnya (begitu juga sebaliknya). Apple menggunakan HL7-FHIR untuk menghubungkan Apple Health App ke berbagai RME/RKE dan bahkan perangkat yang dapat dikenakan seperti Apple Watch.
+
+Oleh karena kemudahan penggunaannya, FHIR telah mendorong pengembangan lebih banyak aplikasi yang berhubungan dengan kesehatan, di luar RME tradisional atau Rekam Medis Kesehatan (RKE). Termasuk pengembangan aplikasi mobile atau aplikasi berbasis wearable devices. HL7-FHIR memanfaatkan penggunaan API untuk meningkatkan akses ke data kesehatan yang digunakan oleh RME yang berbeda. Negara-negara di seluruh dunia, seperti Amerika Serikat, Belanda, dan di Asia (Vietnam dan Filipina) mengadopsi HL7-FHIR sebagai standar dasar pertukaran informasi kesehatan di masing-masing negara mereka.

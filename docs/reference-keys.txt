@@ -1,4 +1,4 @@
-pendahuluan
+latar-belakang
 fragmentasi-data-dan-sistem-informasi-kesehatan
 mengapa-sebuah-aplikasi-tidak-bisa-bertukar-data-secara-otomatis
 kebutuhan-standarisasi-pertukaran-data-dan-informasi-kesehatan

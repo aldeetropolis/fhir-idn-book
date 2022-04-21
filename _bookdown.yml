@@ -5,4 +5,4 @@ edit: https://github.com/aldeetropolis/fhir-idn-book/edit/master/%s
 view: https://github.com/aldeetropolis/fhir-idn-book/blob/master/%s
 language:
   ui:
-    chapter_name: "Bab "
+    chapter_name: ""
